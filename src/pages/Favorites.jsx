@@ -1,8 +1,9 @@
+import "../css/Favorites.css"
 function Favorites(params) {
     return
     <div className="favorite-emty">
 <h2>
-    nothig yet
+    no favorites yet
 </h2>
     </div>
 }

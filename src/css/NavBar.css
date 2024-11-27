@@ -1,0 +1,62 @@
+body {
+    margin: 0; /* Remove default margin */
+}
+
+.navbar {
+    background-color: #141414; /* Dark background for the navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white; /* Brand color remains white */
+    font-weight: bold; /* Bold font for brand */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.nav-link {
+    color: white; /* Link color set to white */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #e50914; /* Change color on hover to Netflix red */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px; /* Rounded corners for input */
+    margin-left: 10px;
+    width: 200px; /* Fixed width for search input */
+}
+
+.search-button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.search-button:hover {
+    background-color: #f40612; /* Darker red on hover */
+}

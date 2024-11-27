@@ -1,0 +1,77 @@
+body {
+  background-color: #141414; /* Dark background for the entire page */
+}
+
+.movie-card-container { /* Added the dot (.) to indicate it's a class */
+  display: grid; /* Use grid layout for cards */
+  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+  gap: 15px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.movie-card {
+  border: none; /* Remove border for a cleaner look */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden;
+  position: relative; /* Position for overlay */
+  transition: transform 0.3s; /* Smooth transition for hover effects */
+  min-width: 150px; /* Minimum width for each card */
+  max-width: 150px; /* Fixed maximum width for each card */
+  height: 225px; /* Fixed height for each card */
+}
+.movie-card:hover {
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.movie-poster img {
+  width: 100%;
+  height: auto;
+  display: block; /* Ensures no extra space below the image */
+}
+
+.movie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7); /* Dark overlay for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie-card:hover .movie-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.movie-title {
+  color: white; /* Title color */
+  font-size: 14px; /* Title font size */
+  text-align: center; /* Center align title */
+  padding: 5px; /* Padding for title */
+}
+
+.favorite-btn {
+  background-color: #e50914; /* Netflix red */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.favorite-btn:hover {
+  background-color: #f40612; /* Darker red on hover */
+  transform: scale(1.05); /* Slight scale effect on hover */
+}
+.movie-info {
+  color: white; /* Ensure the text color is visible */
+  text-align: center; /* Center align the text */
+}

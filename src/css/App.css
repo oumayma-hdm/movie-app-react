@@ -1,0 +1,32 @@
+/* src/styles/Favorites.css */
+.favorite-empty {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #f9f9f9; /* Light background color */
+    color: #333; /* Dark text color */
+    font-family: Arial, sans-serif; /* Font style */
+}
+
+.favorite-empty h2 {
+    font-size: 24px; /* Font size for the heading */
+    margin: 0; /* Remove default margin */
+}
+
+.favorite-empty button {
+    margin-top: 20px; /* Space between heading and button */
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.favorite-empty button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}

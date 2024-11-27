@@ -1,0 +1,150 @@
+body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Font style for the page */
+    background-color: #141414; /* Dark background for the entire page */
+    color: white; /* Default text color */
+}
+
+.navbar {
+    background-color: #141414; /* Dark background for the navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white; /* Brand color remains white */
+    font-weight: bold; /* Bold font for brand */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.nav-link {
+    color: white; /* Link color set to white */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #e50914; /* Change color on hover to Netflix red */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Align search bar to the right */
+}
+
+.search-input {
+    padding: 10px; /* Increased padding for a more spacious feel */
+    border: 1px solid #333; /* Dark border for contrast */
+    border-radius: 4px; /* Rounded corners for input */
+    width: 250px; /* Increased width for better usability */
+    background-color: #222; /* Dark background for input */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size for better readability */
+}
+
+.search-input::placeholder {
+    color: #888; /* Placeholder color */
+}
+
+.search-button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px; /* Increased padding for a more substantial button */
+    cursor: pointer;
+    margin-left: 10px; /* Space between input and button */
+    font-size: 16px; /* Font size for better readability */
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.search-button:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
+
+.header {
+    padding: 20px; /* Padding for header */
+    text-align: center; /* Center align header text */
+}
+
+.header h1 {
+    font-size: 36px; /* Title size */
+    margin: 0; /* Remove default margin */
+}
+
+.movie-card-container {
+    display: flex; /* Use flexbox for horizontal layout */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    padding: 20px; /* Padding around the container */
+    gap: 15px; /* Space between cards */
+}
+
+.movie-card {
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    position: relative; /* Position for overlay */
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+    min-width: 200px; /* Minimum width for each card */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no extra space below the image */
+}
+
+.movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.movie-card:hover .movie-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.movie-title {
+    color: white; /* Title color */
+    font-size: 14px; /* Title font size */
+    text-align: center; /* Center align title */
+    padding: 5px; /* Padding for title */
+}
+
+.favorite-btn {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.favorite-btn:hover {
+    background-color: #f40612; /* Darker red on hover */
+}

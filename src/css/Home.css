@@ -1,0 +1,140 @@
+body {
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Font style for the page */
+    background-color: #141414; /* Dark background for the entire page */
+    color: white; /* Default text color */
+}
+
+.header {
+    padding: 20px; /* Padding for header */
+    text-align: center; /* Center align header text */
+}
+
+.header h1 {
+    font-size: 36px; /* Title size */
+    margin: 0; /* Remove default margin */
+}
+
+.navbar {
+    background-color: #141414; /* Dark background for the navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    color: white; /* Brand color remains white */
+    font-weight: bold; /* Bold font for brand */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.nav-link {
+    color: white; /* Link color set to white */
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.nav-link:hover {
+    color: #e50914; /* Change color on hover to Netflix red */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px; /* Rounded corners for input */
+    margin-left: 10px;
+    width: 200px; /* Fixed width for search input */
+}
+
+.search-button {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.search-button:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
+
+.movie-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between cards */
+    padding: 20px; /* Padding around the grid */
+}
+
+.movie-card {
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    position: relative; /* Position for overlay */
+    transition: transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures no extra space below the image */
+}
+
+.movie-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay for better contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.movie-card:hover .movie-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.movie-title {
+    color: white; /* Title color */
+    font-size: 14px; /* Title font size */
+    text-align: center; /* Center align title */
+    padding: 5px; /* Padding for title */
+}
+
+.favorite-btn {
+    background-color: #e50914; /* Netflix red */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.favorite-btn:hover {
+    background-color: #f40612; /* Darker red on hover */
+}
